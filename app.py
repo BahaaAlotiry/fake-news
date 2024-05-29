@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 port_stem = PorterStemmer()
 vectorization = TfidfVectorizer()
 import nltk
-nltk.download('stopwords')
+nltk.data.path.append('/')
 
 vector_form = pickle.load(open('vector.pkl', 'rb'))
 load_modelTree=pickle.load(open('modelTree.pkl', 'rb'))
