@@ -1,3 +1,10 @@
+nltk.data.path.append('./')
+vector_form = pickle.load(open('vector.pkl', 'rb'))
+load_modelTree=pickle.load(open('modelTree.pkl', 'rb'))
+load_LogisticRegression_model=pickle.load(open('LogisticRegression_model.pkl', 'rb'))
+load_RandomForestClassifier_model=pickle.load(open('RandomForestClassifier_model.pkl', 'rb'))
+load_svm_model=pickle.load(open('svm_model.pkl', 'rb'))
+
 import streamlit as st
 import pickle
 import re
@@ -5,10 +12,10 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
+
 port_stem = PorterStemmer()
 vectorization = TfidfVectorizer()
-import nltk
-nltk.data.path.append('/')
+
 
 vector_form = pickle.load(open('vector.pkl', 'rb'))
 load_modelTree=pickle.load(open('modelTree.pkl', 'rb'))
