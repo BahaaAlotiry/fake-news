@@ -1,3 +1,4 @@
 nltk
 scikit-learn
 joblib
+scikit-learn.feature_extraction.text
